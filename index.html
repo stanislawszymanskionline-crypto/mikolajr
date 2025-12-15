@@ -342,14 +342,12 @@ function createDrawing(obj){
  return mainTl;
  
 }
-/*
 function updateShadow(){
  TweenMax.set('.shadow', {
   x:pencil._gsTransform.x,
   y:pencil._gsTransform.y
  })  
 }
-*/
 
 var drawingTl = createDrawing({list:elementsToDraw, follower:pencil, offsetX:-1, offsetY:-219, timeScale:1, repeat:-1, onUpdate:updateShadow});
 
