@@ -21,8 +21,8 @@ html {
 svg{
 visibility:hidden;
 overflow: hidden;
-	  width:850px;
-  height:100%;
+	  width:800;
+  height:800;
 }
 
 </style>  
@@ -30,13 +30,7 @@ overflow: hidden;
 <body>
    <svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
  <defs>
- <!--- 
- <pattern id="graph" 
-           x="28" y="8" width="30" height="30"
-           patternUnits="userSpaceOnUse">
-  <line x1="0" x2="800" y1="0" y2="0" stroke="#CBCFE9" stroke-width="1"/> 
-  <line x1="10" x2="10" y1="0" y2="600" stroke="#CBCFE9" stroke-width="1"/> 
- ---> 
+ 
   </pattern>
       <filter id="edgeClean" color-interpolation-filters="sRGB">
         <feComponentTransfer>
@@ -44,14 +38,11 @@ overflow: hidden;
         </feComponentTransfer>
       </filter>    
   </defs>
- <rect fill="url(#graph)" width="800" height="600"/>
+ <rect fill="url(#graph)" width="800" height="800"/>
  
  <!---Cień ołówka--->
  <g
- transform="scale(.7 .7)
-               translate(0 300)
-               "
- >
+ transform="scale(0.7)">
   <path class="shadowEnd" opacity="0"
   d="
   M329.6,145.3l-23.1-9.1l-24.7-9.7c-2-0.8-5.6-0.9-7.9-0.3L29,193.6L8,212.8l0,0l-8,7.3
@@ -61,10 +52,8 @@ overflow: hidden;
 	</g>
 
  <!---Wypełnienie kolorami ołówka--->	
-<g class="drawing">
-  <g class="pencilFills" transform="scale(.7 .7)
-               translate(0 300)
-               ">
+<g class="drawing" transform="scale(0.7)">
+  <g class="pencilFills" transform="scale(0.7)">
     <path fill="#FFC334" stroke="none" stroke-linejoin="round" stroke-miterlimit="10" d="M291.9,361.3
       c-13.6-2.9-19.4-10.3-20.8-23.5l179.7-159.3c1.7-1.5,4.3-1.3,5.8,0.3l18.1,20.4L291.9,361.3z"/>
     <path fill="#FBCA7E" stroke="none" stroke-linejoin="round" stroke-miterlimit="10" d="M291.9,361.3
@@ -73,7 +62,7 @@ overflow: hidden;
       c-10.1-1-17.4-8.5-19.7-22.2l182.8-162l16.9,19.1C493,220,492.9,222.6,491.2,224.1z"/>
     <polygon fill="#39434D" stroke="none" stroke-linejoin="round" stroke-miterlimit="10" points="266.8,393.6 249.7,397.4 
       255.6,381     "/>
-  </g>
+  </g></g>
   
    <!--- napis / mikołaj --->
     <g stroke-width="3">
