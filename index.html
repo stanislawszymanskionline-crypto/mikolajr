@@ -29,8 +29,16 @@ overflow: hidden;
 </head>
 <body>
    <svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
-  <defs>     
-	   <filter id="edgeClean" color-interpolation-filters="sRGB">
+<defs>
+ <!--- 
+ <pattern id="graph" 
+           x="28" y="8" width="30" height="30"
+           patternUnits="userSpaceOnUse">
+  <line x1="0" x2="800" y1="0" y2="0" stroke="#CBCFE9" stroke-width="1"/> 
+  <line x1="10" x2="10" y1="0" y2="600" stroke="#CBCFE9" stroke-width="1"/>  
+  </pattern>
+  --->
+      <filter id="edgeClean" color-interpolation-filters="sRGB">
         <feComponentTransfer>
           <feFuncA type="table" tableValues="0 .5 1 1" />
         </feComponentTransfer>
